@@ -11,10 +11,13 @@ def make_list():
 
         for x in range(0, 3):
             userInput = int(get_input())
-            list.insert(x, userInput)
+            if userInput < 50 and userInput > 1:
+                list.insert(x, userInput)
+            else:
+                raise ValueError
 
     except ValueError:
-        print("Enter Valid Values")
+        raise ValueError
     return list
 
 
