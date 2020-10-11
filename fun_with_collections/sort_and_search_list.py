@@ -10,7 +10,7 @@ def get_list():
     return list
 def sort_list(list):
     list.sort()
-    return list
+    return list # returns sorted list parameter so it returns value when testing
 def search_list(list):
     item = int(input("Enter Number"))
     if item in list:
