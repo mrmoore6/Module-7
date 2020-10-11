@@ -3,7 +3,7 @@ Author: Michael Moore
 Program: basic_list.py
 Date: 10/11/20
 
-This program takes
+This program takes 3 inputs and makes them  into a list.
 """
 def make_list():
     list = []
@@ -11,13 +11,9 @@ def make_list():
 
         for x in range(0, 3):
             userInput = int(get_input())
-            if userInput < 50 and userInput > 1:
-                list.insert(x, userInput)
-            else:
-                raise ValueError
-
+            list.insert(x, userInput)
     except ValueError:
-        raise ValueError
+        print("Enter Valid Values")
     return list
 
 
