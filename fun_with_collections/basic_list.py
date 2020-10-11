@@ -1,9 +1,20 @@
+"""
+Author: Michael Moore
+Program: basic_list.py
+Date: 10/11/20
 
+This program takes
+"""
 def make_list():
     list = []
-    for x in range(0, 3):
-        userInput = int(get_input())
-        list.insert(x, userInput)
+    try:
+
+        for x in range(0, 3):
+            userInput = int(get_input())
+            list.insert(x, userInput)
+
+    except ValueError:
+        print("Enter Valid Values")
     return list
 
 
