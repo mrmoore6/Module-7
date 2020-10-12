@@ -1,3 +1,10 @@
+"""
+Author: Michael Moore
+Program: sort_and_search_array.py
+Date: 10/11/20
+
+This program sorts an array and search's through it to find inputed value.
+"""
 from array import array
 def sort_array(arr):
         arr.sort()
